@@ -54,7 +54,7 @@ const data = generateData(columns, 200)
 const fixedColumns = columns.map((column, columnIndex) => {
   let fixed: TableV2FixedDir | undefined = undefined
   if (columnIndex < 3) fixed = TableV2FixedDir.LEFT
-  if (columnIndex > 12) fixed = TableV2FixedDir.RIGHT
+  if (columnIndex > 12) fixed = TableV2FixedDir.Center
   return { ...column, fixed, width: 100 }
 })
 
